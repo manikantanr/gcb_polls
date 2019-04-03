@@ -1,0 +1,12 @@
+steps:
+
+- name: 'python'
+  id: 'Debian Python'
+  entrypoint: /bin/sh
+  args: [ '-c', 'pip install -U nox && nox ']
+
+
+- name: 'python:alpine'
+  id: 'Alpine Python'
+  entrypoint: /bin/sh
+  args: [ '-c', 'pip install -U nox && nox ']
